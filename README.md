@@ -5,6 +5,15 @@
 
 [MaaResources镜像仓库](https://github.com/LaviniaFalcone/MaaResourceMirror) | [下载地址](https://github.com/LaviniaFalcone/MaaResourceSync/releases)
 
+如果你想让这个脚本从自己的仓库拉取更新，可以把公钥 `id_rsa.pub` 添加到自己仓库的 `Deploy keys` 列表中。  然后把 `sync.bat` 中的：
+```shell
+git remote add mirror git@github.com:LaviniaFalcone/MaaResourceMirror
+```
+更改为：
+```shell
+git remote add mirror 自己仓库的SSHURL
+```
+
 ## 常见问题
 
 ### 这个东西有什么用
